@@ -1,0 +1,29 @@
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+credentials*.json
+*.pem
+*.key
+
+# Browser and authentication artifacts
+.auth/
+.browser/
+browser-data/
+cookies*.json
+storage-state*.json
+*.har
+
+# Private or raw research material
+private/
+downloads/
+exports/
+screenshots/
+*.ged
+*.gedcom
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
