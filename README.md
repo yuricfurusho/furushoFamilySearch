@@ -1,34 +1,23 @@
 # Codex-Assisted FamilySearch Workflows
 
-This repository documents practical, repeatable ways to use Codex to help with family-history research on [FamilySearch.org](https://www.familysearch.org/).
+This small repository is a living guide for learning and documenting effective ways to use Codex, its in-app browser, and local-computer tools for family-history work on [FamilySearch.org](https://www.familysearch.org/).
 
-The focus is on combining:
+## Repository shape
 
-- AI-assisted research and documentation
-- Codex's in-app browser
-- Local-computer and browser-control tools
-- Human review and authenticated access to FamilySearch
+For now, the tracked repository contains only `README.md` and `AGENTS.md`. It is not a session log, research archive, or software project. Reusable skills are the only planned exceptions, and they should be added only after a workflow proves useful and Yuri approves expanding the repository.
 
 ## Session baseline
 
-At the start of every working session, open FamilySearch in the Codex in-app browser and let the user authenticate manually before doing any account-dependent work. Codex must not request, enter, record, or commit login credentials, multi-factor authentication codes, cookies, or session data.
+At the start of every session, Codex opens or reuses FamilySearch in the in-app browser and leaves it visible for Yuri to authenticate manually. Codex does not handle credentials, authentication codes, cookies, or session data.
 
-## Scope
+## Learning and reusable skills
 
-This is a documentation and workflow repository, not a mobile app or a conventional software product. Android architecture, Firebase, app distribution, device testing, and other mobile-development instructions do not apply unless the purpose of the repository explicitly changes.
+After each substantive session, Codex evaluates what made the work faster, safer, or more accurate. Only validated, privacy-safe, reusable strategies belong here; case-specific findings and raw interaction logs do not.
 
-The repository should capture useful prompts, procedures, discoveries, limitations, and verification practices that make future FamilySearch work faster, safer, and more reliable.
+When a reusable workflow repeatedly saves effort, prevents meaningful errors, and needs more than a short instruction, Codex will propose turning it into a local skill and sharing the same source here. `AGENTS.md` contains the full decision criteria and safety rules. Until Yuri approves a skill, the repository stays at two files.
 
-## Privacy and research integrity
+## Scope and long-term goal
 
-- Do not save or commit credentials, authentication artifacts, or browser profiles in this repository or workspace.
-- Do not save or commit private genealogy information or identifying information about living people.
-- Use sanitized, redacted, fictional, or public non-sensitive deceased-person examples that do not identify living people.
-- Clearly separate source-supported facts from AI-generated hypotheses or interpretations.
-- Keep a human in control of changes to shared FamilySearch records and relationships.
+This is not a mobile app or conventional software product. Android, Firebase, app distribution, and device-testing instructions do not apply. The long-term goal is a lightweight starting point for other people who want safe, effective Codex assistance with FamilySearch.
 
-## Long-term goal
-
-Over time, this repository may become a reusable starting point for other people who want to use Codex to assist with FamilySearch research safely and effectively.
-
-This is an independent project and is not affiliated with or endorsed by FamilySearch.
+This independent project is not affiliated with or endorsed by FamilySearch.
