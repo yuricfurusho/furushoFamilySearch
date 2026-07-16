@@ -35,14 +35,16 @@ A status-prefixed source-title pattern has been observed across multiple related
 
 `{STATUS} {EVENT TYPE} | {PERSON or PERSON A + PERSON B} | {PLACE} | {YYYY-MM-DD when known} | {PROVENANCE}`
 
-- `🟢` means reviewed, accepted, or sufficiently complete.
-- `🟡` means review, cleanup, or attachment work remains.
+- `🟢` means fully reviewed: every extractable detail has been evaluated and placed on the correct people and fields, with applicable attachments resolved.
+- `🟡` means the title has been standardized and review has begun, but extraction, verification, cleanup, or attachment work remains.
 - Observed event types include `NASCIMENTO`, `CASAMENTO`, `ÓBITO`, and `MEMORIA PESSOAL`.
 - Marriage titles use `PERSON A + PERSON B`.
 - The ISO date segment is optional when unknown. Its absence alone does not mean a source is unreviewed.
 - Provenance is the final segment. Observed forms include `FS: Registro Civil` and `Informante: {PERSON}`.
 
 Existing titles vary in spacing and may use a four-segment form without a date. For future authorized title changes, use one space after the emoji and around each `|`, include an ISO date only when the source supports it, and never infer review status from formatting alone.
+
+The emoji is a workflow state, not a confidence label. Do not assign `🟡` without actually inspecting the source, and do not assign `🟢` merely because no warning or image is visible. When an image is unavailable through all authorized routes, a source may still become green only after all available indexed information, citations, people, relationships, facts, and attachments have been fully processed.
 
 ## Scope and long-term goal
 
