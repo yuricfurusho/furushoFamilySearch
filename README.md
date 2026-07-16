@@ -1,57 +1,41 @@
 # Codex-Assisted FamilySearch Workflows
 
-This small repository is a living guide for learning and documenting effective ways to use Codex, its in-app browser, and local-computer tools for family-history work on [FamilySearch.org](https://www.familysearch.org/).
+A lightweight, public guide to using Codex, its in-app browser, and local-computer tools for careful family-history work on [FamilySearch.org](https://www.familysearch.org/).
 
-## Repository shape
+## Scope and safety
 
-For now, the tracked repository contains only `README.md` and `AGENTS.md`. It is not a session log, research archive, or software project. Reusable skills are the only planned exceptions, and they should be added only after a workflow proves useful and Yuri approves expanding the repository.
+- The repository tracks only `README.md` and `AGENTS.md`. It is not an application, research archive, or session log.
+- Never store private genealogy, living-person data, screenshots, exports, credentials, cookies, or authentication artifacts here.
+- Each session starts by reusing or opening FamilySearch and leaving it visible for Yuri to authenticate. Codex never handles credentials or authentication codes.
+- Exploration is read-only by default. Any FamilySearch modification requires explicit approval.
 
-## Session baseline
+## Efficient browser workflow
 
-At the start of every session, Codex opens or reuses FamilySearch in the in-app browser and leaves it visible for Yuri to authenticate manually. Codex does not handle credentials, authentication codes, cookies, or session data.
+- Known person: `/en/tree/person/{tab}/{person-id}`, where `{tab}` includes `details`, `sources`, `memories`, `timeline`, and related profile tabs.
+- Known tree focus: `/en/tree/pedigree/{view}/{person-id}`. **View Tree** re-centers the last tree view.
+- Unknown person: use **Recents** to identify the correct profile and branch before following relationships.
+- Source review progresses from **Sources list → source card → indexed record → Source Linker → accessible image or authorized external record**. Stop wherever evidence or permission ends.
+- FamilySearch loads dynamically. Wait for real content, then verify the person, heading, destination, and opened dialog before continuing. Leave reconnaissance forms through **Cancel** or **Close**, never **Save**.
 
-## Learning and reusable skills
+## Source-title convention
 
-After each substantive session, Codex evaluates what made the work faster, safer, or more accurate. Only validated, privacy-safe, reusable strategies belong here; case-specific findings and raw interaction logs do not.
+- Compact: `{STATUS} {EVENT} | {PERSON or PERSON A + PERSON B} | {UF - MUNICIPALITY} | {PROVENANCE}`
+- Dated: `{STATUS} {EVENT} | {PERSON or PERSON A + PERSON B} | {PLACE} | {YYYY-MM-DD} | {PROVENANCE}`
 
-When a reusable workflow repeatedly saves effort, prevents meaningful errors, and needs more than a short instruction, Codex will propose turning it into a local skill and sharing the same source here. `AGENTS.md` contains the full decision criteria and safety rules. Until Yuri approves a skill, the repository stays at two files.
+`🟡` means the title is standardized and review has begun, but work remains. `🟢` means every extractable detail has been evaluated and placed on the correct people and fields, with applicable attachments resolved.
 
-## Validated navigation map
+Rules:
 
-When a FamilySearch person ID is known, direct routes avoid repeated menu navigation:
+- Determine the event from the source and citation. Observed types include `NASCIMENTO`, `BATISMO`, `CASAMENTO`, `ÓBITO`, and `MEMORIA PESSOAL`.
+- Birth and baptism are distinct and may both exist for one person. Marriage uses `PERSON A + PERSON B`.
+- The compact form may rely on FamilySearch's populated **Source Date** instead of repeating the date. Compact and dated forms do not represent different review states.
+- Use `UF - MUNICIPALITY` only when both parts are supported; never invent missing dates or places.
+- Provenance must match the actual source, such as `FS: Registro Civil` or `Informante: {PERSON}`. Do not label church or baptism records as civil registration merely because another title does.
+- Canonical spacing is one space after the emoji, around each `|`, and after `:`.
+- A missing or restricted image does not prove completeness. Green is possible only after all information available through authorized routes has been processed.
 
-- Person tabs use `/en/tree/person/{tab}/{person-id}`, where `{tab}` is `about`, `details`, `sources`, `collaborate`, `memories`, `timeline`, or `ordinances`.
-- Tree views use `/en/tree/pedigree/{view}/{person-id}`, where `{view}` is `landscape`, `portrait`, `fanchart`, `descendancy`, or `first-ancestor`.
-- A profile's **View Tree** link uses `/en/tree/pedigree/{person-id}` and recenters the last-selected tree view on that person.
-- **Recents** can filter previously viewed people by name or person ID.
+## Continuous improvement
 
-The Details tab groups vitals, other information, family members, other relationships, life history, research help, notes, changes, and tools. Edit dialogs commonly separate structured values from a **Reason This Information Is Correct** field. During read-only reconnaissance, inspect forms without typing and always leave through **Cancel** or **Close**, never **Save**.
-
-FamilySearch is a changing website. Verify the destination heading and that menus or dialogs actually opened before taking the next action.
-
-## Observed source-title convention
-
-A status-prefixed source-title pattern has been observed across multiple related profiles in two established shapes:
-
-- Compact: `{STATUS} {EVENT TYPE} | {PERSON or PERSON A + PERSON B} | {UF - MUNICIPALITY} | {PROVENANCE}`
-- Dated: `{STATUS} {EVENT TYPE} | {PERSON or PERSON A + PERSON B} | {PLACE} | {YYYY-MM-DD} | {PROVENANCE}`
-
-- `🟢` means fully reviewed: every extractable detail has been evaluated and placed on the correct people and fields, with applicable attachments resolved.
-- `🟡` means the title has been standardized and review has begun, but extraction, verification, cleanup, or attachment work remains.
-- Observed event types include `NASCIMENTO`, `BATISMO`, `CASAMENTO`, `ÓBITO`, and `MEMORIA PESSOAL`.
-- `NASCIMENTO` and `BATISMO` are distinct events. Separate titles for both may legitimately exist for the same person.
-- Marriage titles use `PERSON A + PERSON B`.
-- The compact form may omit the ISO date even when it is known because FamilySearch already displays a structured **Source Date**. Verify that field before omitting the date from a title.
-- The compact and dated shapes describe formatting, not different review states.
-- When both components are documented, a widely used place form is state first: `UF - MUNICIPALITY`. Other existing titles use city-first or state-and-country forms; never infer a missing place component.
-- Provenance is the final segment. Observed forms include `FS: Registro Civil` and `Informante: {PERSON}`, but the label must match the actual collection or citation. Do not copy a civil-registration label onto a church or baptism source, and use a space after the colon.
-
-Existing titles vary in spacing. For future authorized title changes, use one space after the emoji and around each `|`, include an ISO date only when the source supports it, and never infer review status from formatting alone.
-
-The emoji is a workflow state, not a confidence label. Do not assign `🟡` without actually inspecting the source, and do not assign `🟢` merely because no warning or image is visible. When an image is unavailable through all authorized routes, a source may still become green only after all available indexed information, citations, people, relationships, facts, and attachments have been fully processed.
-
-## Scope and long-term goal
-
-This is not a mobile app or conventional software product. Android, Firebase, app distribution, and device-testing instructions do not apply. The long-term goal is a lightweight starting point for other people who want safe, effective Codex assistance with FamilySearch.
+After substantive work, retain only validated, reusable, privacy-safe lessons. Prefer a short README or AGENTS rule. Propose a separate skill only when a repeated, general workflow needs reusable tooling or detailed verification, and add it only with Yuri's approval.
 
 This independent project is not affiliated with or endorsed by FamilySearch.
