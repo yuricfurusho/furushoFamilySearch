@@ -29,6 +29,21 @@ The Details tab groups vitals, other information, family members, other relation
 
 FamilySearch is a changing website. Verify the destination heading and that menus or dialogs actually opened before taking the next action.
 
+## Observed source-title convention
+
+A status-prefixed source-title pattern has been observed across multiple related profiles:
+
+`{STATUS} {EVENT TYPE} | {PERSON or PERSON A + PERSON B} | {PLACE} | {YYYY-MM-DD when known} | {PROVENANCE}`
+
+- `🟢` means reviewed, accepted, or sufficiently complete.
+- `🟡` means review, cleanup, or attachment work remains.
+- Observed event types include `NASCIMENTO`, `CASAMENTO`, `ÓBITO`, and `MEMORIA PESSOAL`.
+- Marriage titles use `PERSON A + PERSON B`.
+- The ISO date segment is optional when unknown. Its absence alone does not mean a source is unreviewed.
+- Provenance is the final segment. Observed forms include `FS: Registro Civil` and `Informante: {PERSON}`.
+
+Existing titles vary in spacing and may use a four-segment form without a date. For future authorized title changes, use one space after the emoji and around each `|`, include an ISO date only when the source supports it, and never infer review status from formatting alone.
+
 ## Scope and long-term goal
 
 This is not a mobile app or conventional software product. Android, Firebase, app distribution, and device-testing instructions do not apply. The long-term goal is a lightweight starting point for other people who want safe, effective Codex assistance with FamilySearch.
