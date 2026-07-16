@@ -31,18 +31,22 @@ FamilySearch is a changing website. Verify the destination heading and that menu
 
 ## Observed source-title convention
 
-A status-prefixed source-title pattern has been observed across multiple related profiles:
+A status-prefixed source-title pattern has been observed across multiple related profiles in two established shapes:
 
-`{STATUS} {EVENT TYPE} | {PERSON or PERSON A + PERSON B} | {PLACE} | {YYYY-MM-DD when known} | {PROVENANCE}`
+- Compact: `{STATUS} {EVENT TYPE} | {PERSON or PERSON A + PERSON B} | {UF - MUNICIPALITY} | {PROVENANCE}`
+- Dated: `{STATUS} {EVENT TYPE} | {PERSON or PERSON A + PERSON B} | {PLACE} | {YYYY-MM-DD} | {PROVENANCE}`
 
 - `🟢` means fully reviewed: every extractable detail has been evaluated and placed on the correct people and fields, with applicable attachments resolved.
 - `🟡` means the title has been standardized and review has begun, but extraction, verification, cleanup, or attachment work remains.
-- Observed event types include `NASCIMENTO`, `CASAMENTO`, `ÓBITO`, and `MEMORIA PESSOAL`.
+- Observed event types include `NASCIMENTO`, `BATISMO`, `CASAMENTO`, `ÓBITO`, and `MEMORIA PESSOAL`.
+- `NASCIMENTO` and `BATISMO` are distinct events. Separate titles for both may legitimately exist for the same person.
 - Marriage titles use `PERSON A + PERSON B`.
-- The ISO date segment is optional when unknown. Its absence alone does not mean a source is unreviewed.
-- Provenance is the final segment. Observed forms include `FS: Registro Civil` and `Informante: {PERSON}`.
+- The compact form may omit the ISO date even when it is known because FamilySearch already displays a structured **Source Date**. Verify that field before omitting the date from a title.
+- The compact and dated shapes describe formatting, not different review states.
+- When both components are documented, a widely used place form is state first: `UF - MUNICIPALITY`. Other existing titles use city-first or state-and-country forms; never infer a missing place component.
+- Provenance is the final segment. Observed forms include `FS: Registro Civil` and `Informante: {PERSON}`, but the label must match the actual collection or citation. Do not copy a civil-registration label onto a church or baptism source, and use a space after the colon.
 
-Existing titles vary in spacing and may use a four-segment form without a date. For future authorized title changes, use one space after the emoji and around each `|`, include an ISO date only when the source supports it, and never infer review status from formatting alone.
+Existing titles vary in spacing. For future authorized title changes, use one space after the emoji and around each `|`, include an ISO date only when the source supports it, and never infer review status from formatting alone.
 
 The emoji is a workflow state, not a confidence label. Do not assign `🟡` without actually inspecting the source, and do not assign `🟢` merely because no warning or image is visible. When an image is unavailable through all authorized routes, a source may still become green only after all available indexed information, citations, people, relationships, facts, and attachments have been fully processed.
 
