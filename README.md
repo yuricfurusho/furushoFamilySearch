@@ -30,7 +30,7 @@ Rules:
 - The person segment identifies the document's primary subject or subjects, independently of the profile where the source is attached. Birth and baptism are distinct; marriage uses both spouses.
 - The canonical title never repeats the date. Verify and, with approval and supporting evidence, update **Source Date** to the primary event date. Preserve relevant secondary or administrative dates in the citation or notes.
 - Use `UF - MUNICIPALITY` only when both parts are supported; never invent missing dates or places.
-- Provenance must match the consulted material: `FS: Registro Civil` for civil records, `FS: Registro Paroquial` for a consulted parish register or image, `FS: Índice Paroquial` when only its derived index is available, `Acervo familiar` for material genuinely held by the family, or `Informante: {PERSON}` for personal testimony. Do not copy a label from another title.
+- Provenance follows the source's origin: use `FS: Registro Civil` for sources of civil origin and `FS: Registro Paroquial` for sources of parish origin, whether FamilySearch presents them through an index, OCR, transcription, or image; use `Acervo familiar` for material genuinely held by the family and `Informante: {PERSON}` for personal testimony. Do not copy a label from another title.
 - Canonical spacing is one space after the emoji, around each `|`, and after `:`.
 - A missing or restricted image does not prove completeness. Green is possible only after all information available through authorized routes has been processed.
 
