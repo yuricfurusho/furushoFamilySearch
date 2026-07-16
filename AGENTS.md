@@ -3,7 +3,7 @@
 ## Boundaries
 
 - This repository documents Codex-assisted FamilySearch workflows; it is not a mobile, Android, Firebase, or conventional software project.
-- Keep tracked content limited to `README.md` and `AGENTS.md` unless Yuri explicitly approves a reusable skill.
+- Keep tracked content limited to `README.md`, `AGENTS.md`, and the approved `skills/familysearch-source-standardizer` skill. Add anything else only with Yuri's explicit approval.
 - Publish only generic, durable guidance. Never add case logs, research data, living-person information, screenshots, exports, credentials, authentication artifacts, code, CI, or unrelated project files.
 
 ## Session protocol
@@ -34,4 +34,4 @@ After each substantive FamilySearch interaction:
 3. Record only validated, general, privacy-safe lessons; never a transcript or case history.
 4. End the report with a one-to-three-question confirmation quiz about new conventions or unresolved assumptions; say so if none remain.
 
-Propose a skill only when the workflow repeats, has clear inputs and outcomes, generalizes beyond one family, contains no embedded private data or credentials, and needs more than a short rule. Obtain Yuri's approval, use `skill-creator`, and keep the repository source aligned with the locally installed copy.
+Propose another skill only when the workflow repeats, has clear inputs and outcomes, generalizes beyond one family, contains no embedded private data or credentials, and needs more than a short rule. Obtain Yuri's approval, use `skill-creator`, and keep every approved repository source aligned with its locally installed copy.

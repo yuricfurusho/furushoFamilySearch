@@ -1,0 +1,4 @@
+interface:
+  display_name: "FamilySearch Source Standardizer"
+  short_description: "Standardize FamilySearch sources safely"
+  default_prompt: "Use $familysearch-source-standardizer to audit and standardize a small approved batch of FamilySearch sources."
