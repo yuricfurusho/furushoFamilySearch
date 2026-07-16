@@ -21,7 +21,7 @@
 - Status emojis record only whether review has started or completed; they do not certify historical accuracy or absence of human error. Assign `🟡` only after a real review begins and `🟢` only after processing all authorized evidence, correct people and fields, and applicable attachments.
 - Use the universal compact title. Name the document's primary subject or subjects, never automatically the profile where the source happens to be attached.
 - Before changing status, check the source, citation, authorized images, indexed information, people, relationships, facts, tags, and unfinished attachments. If no image is available, exhaust all remaining authorized evidence first.
-- Derive event type and provenance from the consulted material. Keep birth and baptism separate; use `FS: Registro Paroquial` for parish records and `Acervo familiar` only for genuine family-held material.
+- Derive event type from the record and provenance from the source's origin, not its presentation as an index, OCR, transcription, or image. Keep birth and baptism separate; use `FS: Registro Paroquial` for parish records and `Acervo familiar` only for genuine family-held material.
 - Do not repeat dates in canonical titles. Before normalization, verify and, only with approval and evidence, update **Source Date** to the primary event date; keep relevant secondary dates in citation or notes. Never infer missing facts.
 - For a standardization project, first produce a read-only change list for already patterned titles. Obtain approval for the exact batch, edit in small groups, verify each saved result, and report every title and Source Date changed.
 

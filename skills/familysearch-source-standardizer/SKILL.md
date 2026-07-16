@@ -1,6 +1,6 @@
 ---
 name: familysearch-source-standardizer
-description: Audit, propose, and safely apply standardized FamilySearch source titles, Source Date values, provenance labels, and related source metadata in small approved batches. Use when Codex is asked to review already patterned sources, normalize source titles, correct civil versus parish or index provenance, fill or verify Source Date, deduplicate sources attached to several profiles, or report source-cleanup work on FamilySearch.org.
+description: Audit, propose, and safely apply standardized FamilySearch source titles, Source Date values, provenance labels, and related source metadata in small approved batches. Use when Codex is asked to review already patterned sources, normalize source titles, correct civil versus parish provenance, fill or verify Source Date, deduplicate sources attached to several profiles, or report source-cleanup work on FamilySearch.org.
 ---
 
 # FamilySearch Source Standardizer
@@ -25,11 +25,11 @@ Use:
 Apply these rules:
 
 - Use `🟡` for review started and `🟢` for review completed using all authorized evidence available at that time. Treat status as workflow progress, never as a guarantee of historical correctness.
-- Name the person or people central to the document's primary event, regardless of the profile where the source is attached. Use both spouses for marriage.
+- Name the person or people central to the document's primary event, regardless of the profile where the source is attached. Use both spouses for marriage. Treat Source Linker and attachment profiles as evidence of association, not centrality. If an index or OCR says `UNKNOWN` or conflicts with the title, image, or another record view, do not infer the subject from an attached profile; keep the source uncertain until a manual reading of the exact record resolves the conflict.
 - Keep birth and baptism distinct. Derive every event type from the record and citation.
 - Put the primary event date in **Source Date** when evidence supports it. Do not repeat the date in the title. Preserve relevant administrative or secondary dates in citation or notes.
 - Use `UF - MUNICIPALITY` only when both elements are supported. Never infer a missing date or place.
-- Use `FS: Registro Civil` for a civil register, `FS: Registro Paroquial` for a consulted parish register or image, `FS: Índice Paroquial` when only a derived parish index is available, `Acervo familiar` for material genuinely held by the family, and `Informante: {PERSON}` for personal testimony.
+- Use `FS: Registro Civil` for sources of civil origin, `FS: Registro Paroquial` for sources of parish origin regardless of whether FamilySearch presents them through an index, OCR, transcription, or image, `Acervo familiar` for material genuinely held by the family, and `Informante: {PERSON}` for personal testimony.
 - Use one space after the emoji, around every `|`, and after `:`.
 - Treat existing titles as evidence of prior practice, not authority for event, status, date, place, or provenance.
 
@@ -69,10 +69,10 @@ For each unique source:
 
 1. Determine the primary event and central subject or subjects.
 2. Determine the supported `UF - MUNICIPALITY` value.
-3. Classify provenance from the material actually consulted. Distinguish an index from an original or imaged register.
+3. Classify provenance from the source's origin. Track index, OCR, transcription, and image availability separately as completeness evidence, not title provenance.
 4. Set Source Date to the supported primary event date, or leave it unchanged or blank when evidence is insufficient.
 5. Compose the compact title and normalize spacing.
-6. Preserve the current emoji unless review status itself is in scope. If the audit exposes unfinished work on a green source, report it and request approval before changing status.
+6. Preserve the current emoji unless the exact status change is explicitly approved, including any green-to-yellow downgrade. If the audit exposes unfinished work on a green source, report it and request approval before changing status.
 
 ### 5. Present the write set
 
