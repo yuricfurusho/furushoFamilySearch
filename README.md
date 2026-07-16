@@ -4,7 +4,7 @@ A lightweight, public guide to using Codex, its in-app browser, and local-comput
 
 ## Scope and safety
 
-- The repository tracks only `README.md` and `AGENTS.md`. It is not an application, research archive, or session log.
+- The repository tracks `README.md`, `AGENTS.md`, and the approved reusable skill in `skills/familysearch-source-standardizer`. It is not an application, research archive, or session log.
 - Never store private genealogy, living-person data, screenshots, exports, credentials, cookies, or authentication artifacts here.
 - Each session starts by reusing or opening FamilySearch and leaving it visible for Yuri to authenticate. Codex never handles credentials or authentication codes.
 - Exploration is read-only by default. Any FamilySearch modification requires explicit approval.
@@ -30,7 +30,7 @@ Rules:
 - The person segment identifies the document's primary subject or subjects, independently of the profile where the source is attached. Birth and baptism are distinct; marriage uses both spouses.
 - The canonical title never repeats the date. Verify and, with approval and supporting evidence, update **Source Date** to the primary event date. Preserve relevant secondary or administrative dates in the citation or notes.
 - Use `UF - MUNICIPALITY` only when both parts are supported; never invent missing dates or places.
-- Provenance must match the consulted material: `FS: Registro Civil` for civil records, `FS: Registro Paroquial` for parish records, `Acervo familiar` for material genuinely held by the family, or `Informante: {PERSON}` for personal testimony. Do not copy a label from another title.
+- Provenance must match the consulted material: `FS: Registro Civil` for civil records, `FS: Registro Paroquial` for a consulted parish register or image, `FS: Índice Paroquial` when only its derived index is available, `Acervo familiar` for material genuinely held by the family, or `Informante: {PERSON}` for personal testimony. Do not copy a label from another title.
 - Canonical spacing is one space after the emoji, around each `|`, and after `:`.
 - A missing or restricted image does not prove completeness. Green is possible only after all information available through authorized routes has been processed.
 
@@ -47,6 +47,6 @@ Because Family Tree is shared, clear titles, citations, reasons, and tags help c
 
 ## Continuous improvement
 
-After each substantive FamilySearch interaction, assess navigation and verification, review both files for safe compaction, and end the report with a short confirmation quiz about new conventions or unresolved assumptions. Change documentation only for validated, reusable, privacy-safe lessons. Propose a skill only when a repeated general workflow needs more than a short rule, and add it only with Yuri's approval.
+After each substantive FamilySearch interaction, assess navigation and verification, review the guidance for safe compaction, and end the report with a short confirmation quiz about new conventions or unresolved assumptions. Change documentation or the approved skill only for validated, reusable, privacy-safe lessons, and keep its repository source synchronized with the local installation.
 
 This independent project is not affiliated with or endorsed by FamilySearch.
