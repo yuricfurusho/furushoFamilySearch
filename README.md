@@ -2,6 +2,10 @@
 
 A lightweight, public guide to using Codex, its in-app browser, and local-computer tools for careful family-history work on [FamilySearch.org](https://www.familysearch.org/).
 
+## Motivation
+
+Elder Dale G. Renlund's April 2018 message, [“Family History and Temple Work: Sealing and Healing”](https://www.churchofjesuschrist.org/study/general-conference/2018/04/family-history-and-temple-work-sealing-and-healing?lang=eng), describes family history and temple work as a way to connect generations and bring blessings and healing to the living as well as the dead. His invitation to make time for this work inspires this project's approach: make family history easier to return to daily through small, manageable sessions, with Codex helping reduce friction while people guide the work.
+
 ## Scope and safety
 
 - The repository tracks `README.md`, `AGENTS.md`, and the approved reusable skill in `skills/familysearch-source-standardizer`. It is not an application, research archive, or session log.
@@ -17,6 +21,10 @@ A lightweight, public guide to using Codex, its in-app browser, and local-comput
 - During a task, keep a short, temporary map of active person IDs and verified parent, spouse, and child relationships. Recheck it before any modification and never persist it.
 - Source review progresses from **Sources list → source card → indexed record → Source Linker → accessible image or authorized external record**. Stop wherever evidence or permission ends.
 - FamilySearch loads dynamically. Wait for real content, then verify the person, heading, destination, and opened dialog before continuing. Leave reconnaissance forms through **Cancel** or **Close**, never **Save**.
+- **VIEW**, **BROWSE THE FILM**, and **VIEW IMAGE** may open another tab. Check the tab inventory, close temporary tabs, and inspect authorized links from both current and retired records before declaring an image unavailable. Confirm the exact entry when a film link is only approximate.
+- For guided review, show one concrete uncertainty at a time. Codex handles readable metadata; the human supplies judgment where the evidence needs it. Agree on a finite source set so new arrivals do not keep expanding a cleanup pass.
+- Aim for about five minutes of the user's active review time per session. Prepare readable evidence and a small, achievable objective in advance; present one decision at a time and leave a clear next step. Treat five minutes as a target, not a reason to rush evidence or imply completion.
+- Agree on review depth: **metadata-only** for formatting, dates, citations, and readable indexed fields; **evidence-complete** for image review and information extraction. A quick closeout stays metadata-only: do not browse film pages or expand the family. Report deeper checks and uninspected sources as pending in the chat, with stable links, without claiming the genealogy or all formatting is complete.
 
 ## Source-title convention
 
@@ -24,10 +32,12 @@ A lightweight, public guide to using Codex, its in-app browser, and local-comput
 
 `🟡` means review has started; `🟢` means review has been completed using all evidence available through authorized routes. These statuses track progress, not historical reliability or freedom from human error.
 
+For a confirmed duplicate, use `⚪` and append ` | DUPLICATA`. Keep useful image links and existing attachments; identify the preferred source in the change reason or an approved note. A retired record may retain information or access that the current copy lacks.
+
 Rules:
 
 - Determine the event from the source and citation. Observed types include `NASCIMENTO`, `BATISMO`, `CASAMENTO`, `ÓBITO`, and `MEMORIA PESSOAL`.
-- The person segment identifies the document's primary subject or subjects, independently of the profile where the source is attached. Birth and baptism are distinct; marriage uses both spouses.
+- The person segment identifies the document's primary subject or subjects, independently of the profile where the source is attached. Preserve the record's spelling; state whether a proposed name comes from an index or an image when they differ. Birth and baptism are distinct; marriage uses both spouses.
 - The canonical title never repeats the date. Verify and, with approval and supporting evidence, update **Source Date** to the primary event date. Preserve relevant secondary or administrative dates in the citation or notes.
 - Use `UF - MUNICIPALITY` only when both parts are supported; never invent missing dates or places.
 - Provenance follows the source's origin: use `FS: Registro Civil` for sources of civil origin and `FS: Registro Paroquial` for sources of parish origin, whether FamilySearch presents them through an index, OCR, transcription, or image; use `Acervo familiar` for material genuinely held by the family and `Informante: {PERSON}` for personal testimony. Do not copy a label from another title.
@@ -48,5 +58,7 @@ Because Family Tree is shared, clear titles, citations, reasons, and tags help c
 ## Continuous improvement
 
 After each substantive FamilySearch interaction, assess navigation and verification, review the guidance for safe compaction, and end the report with a short confirmation quiz about new conventions or unresolved assumptions. Change documentation or the approved skill only for validated, reusable, privacy-safe lessons, and keep its repository source synchronized with the local installation.
+
+Yuri's approval of a durable local configuration or workflow decision for this repository includes commit, push, and merge without another publication confirmation. Follow the review, privacy, synchronization, and remote verification steps in `AGENTS.md`; preserve unrelated work and report any blocked checks or protections without bypassing them. This repository-only authorization does not permit FamilySearch changes or storing genealogical decisions and case data in Git.
 
 This independent project is not affiliated with or endorsed by FamilySearch.

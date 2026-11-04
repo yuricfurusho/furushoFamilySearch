@@ -25,7 +25,9 @@ Use:
 Apply these rules:
 
 - Use `🟡` for review started and `🟢` for review completed using all authorized evidence available at that time. Treat status as workflow progress, never as a guarantee of historical correctness.
+- For a confirmed duplicate, use `⚪` and append ` | DUPLICATA`. Preserve attachments and useful image links, and reference the preferred source in the change reason or an approved note. Retirement does not imply that a copy contains less information or offers no useful access.
 - Name the person or people central to the document's primary event, regardless of the profile where the source is attached. Use both spouses for marriage. Treat Source Linker and attachment profiles as evidence of association, not centrality. If an index or OCR says `UNKNOWN` or conflicts with the title, image, or another record view, do not infer the subject from an attached profile; keep the source uncertain until a manual reading of the exact record resolves the conflict.
+- Preserve the record's spelling rather than normalizing it toward the tree profile. When index and image readings differ, explain which evidence supplies the proposed name; an indexed spelling is not a verified reading of the image.
 - Keep birth and baptism distinct. Derive every event type from the record and citation.
 - Put the primary event date in **Source Date** when evidence supports it. Do not repeat the date in the title. Preserve relevant administrative or secondary dates in citation or notes.
 - Use `UF - MUNICIPALITY` only when both elements are supported. Never infer a missing date or place.
@@ -39,6 +41,10 @@ Apply these rules:
 
 Record the approved starting person or branch, operation, batch size, and provenance vocabulary. If approval is conceptual but not tied to exact sources, audit first and present the proposed batch before writing.
 
+For an existing-title cleanup, agree on a finite source set and keep newly arrived or unpatterned sources outside it unless the user expands the scope. Report unresolved reviews separately from completed formatting.
+
+Choose the review depth explicitly: **metadata-only** (titles, dates, citations, and readable indexed fields) or **evidence-complete** (including authorized images and extraction). When the user requests a quick, shallow closeout, use metadata-only mode: do not browse film pages, transcribe handwriting, expand relatives, or start new research. Defer anything that needs deeper evidence and identify it in the chat report, never in public repository files. A formatting pass does not complete genealogical processing or authorize a green status.
+
 ### 2. Build a temporary navigation buffer
 
 Keep only for the active task:
@@ -51,7 +57,11 @@ Deduplicate by source identity, not title or profile. The same source can appear
 
 ### 3. Audit each unique source
 
-Move through **Sources list → source card → indexed record → Source Linker → authorized image or external record** as available. Wait for dynamic content and verify the displayed person, heading, route, source, and dialog after every navigation.
+In evidence-complete mode, move through **Sources list → source card → indexed record → Source Linker → authorized image or external record** as available. In metadata-only mode, stop at readable source metadata or indexed fields; an ambiguous subject, spelling, date, or image pointer becomes a deferred check, not a film-page search. Wait for dynamic content and verify the displayed person, heading, route, source, and dialog after every navigation.
+
+Check the tab inventory after **VIEW**, **BROWSE THE FILM**, or **VIEW IMAGE**; these controls may open another tab. Keep only the tabs needed for the current check. Inspect authorized links from both current and retired record views before declaring an image unavailable, and verify the exact entry when a film link is approximate.
+
+In a guided, one-at-a-time session, show one concrete uncertainty and ask for the human judgment needed to resolve it. Read visible metadata independently rather than asking the user to repeat text Codex can already verify.
 
 Capture from visible evidence:
 
@@ -97,7 +107,7 @@ Obtain approval for the exact write set unless the user already approved that ex
 
 ### 7. Report
 
-Separate sources into updated, already canonical, skipped, and failed. For every update, report the before and after title, Source Date change, attachment scope, verification result, and any follow-up work. Clearly state whether FamilySearch data changed.
+Separate sources into updated, already canonical, skipped, failed, and not yet inspected. For every update, report the before and after title, Source Date change, attachment scope, verification result, and any follow-up work. For deferred work, give a stable source link or identity, the unresolved issue, and the next bounded check in the chat report only. Clearly state the review depth and whether FamilySearch data changed; do not call an uninspected source canonical merely because its title looks standardized.
 
 ## Continuous improvement
 
@@ -111,4 +121,4 @@ After every substantive run:
 
 ## Completion criteria
 
-Finish only when the approved unique sources have been audited, each saved change has been reopened and verified, no out-of-scope data changed, the temporary buffer is discarded, and the report plus retrospective is delivered.
+Close the agreed pass only when every in-scope item has an explicit outcome, each saved change has been reopened and verified, no out-of-scope data changed, the temporary buffer is discarded, and the report plus retrospective is delivered. A user-requested administrative closeout may include documented deferred or uninspected items; label it as a checkpoint, not a completed source audit or genealogical review.
