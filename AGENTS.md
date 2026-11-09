@@ -35,6 +35,7 @@ Aim for about five minutes of Yuri's active review time per session. Prepare wha
 - Derive event type from the record and provenance from the source's origin, not its presentation as an index, OCR, transcription, or image. Keep birth and baptism separate; use `FS: Registro Paroquial` for parish records and `Acervo familiar` only for genuine family-held material.
 - Do not repeat dates in canonical titles. Before normalization, verify and, only with approval and evidence, update **Source Date** to the primary event date; keep relevant secondary dates in citation or notes. Never infer missing facts.
 - For a standardization project, first produce a read-only change list for already patterned titles. Obtain approval for the exact batch, edit in small groups, verify each saved result, and report every title and Source Date changed.
+- In guided one-at-a-time work, present the current source with its direct link, current title and Source Date, exact proposed changes, and supporting metadata before requesting approval. In the same decision message, link the next source and briefly state what is known or unresolved; approval applies only to the current source.
 - Respect the agreed review depth. A metadata-only closeout must not become image-by-image research; account for deferred and uninspected work in the chat report, never in public files. Do not confuse a checkpoint or formatting pass with complete genealogical processing.
 
 ## Continuous improvement and skills

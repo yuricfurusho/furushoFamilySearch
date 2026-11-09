@@ -63,6 +63,8 @@ Check the tab inventory after **VIEW**, **BROWSE THE FILM**, or **VIEW IMAGE**; 
 
 In a guided, one-at-a-time session, show one concrete uncertainty and ask for the human judgment needed to resolve it. Read visible metadata independently rather than asking the user to repeat text Codex can already verify.
 
+For each one-at-a-time decision, present the current source first with a direct FamilySearch link, its current title and Source Date, the proposed exact changes, and the visible evidence. Then present the next source to inspect, also with a direct link and a brief note about what is known or still uncertain. Ask for approval only for the current source; do not imply approval of the next one. If the next source is ambiguous, link it and explain the specific unresolved point.
+
 Capture from visible evidence:
 
 - current title and Source Date;
