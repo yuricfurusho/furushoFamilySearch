@@ -20,7 +20,7 @@ Standardize sources for fast recognition and collaboration without confusing for
 
 Use:
 
-`{STATUS} {EVENT} | {PRIMARY PERSON or PERSON A + PERSON B} | {UF - MUNICIPALITY} | {PROVENANCE}`
+`{STATUS} {EVENT or DOCUMENT TYPE} | {PRIMARY PERSON or PERSON A + PERSON B} | {UF - MUNICIPALITY} | {PROVENANCE}`
 
 Apply these rules:
 
@@ -29,8 +29,9 @@ Apply these rules:
 - Name the person or people central to the document's primary event, regardless of the profile where the source is attached. Use both spouses for marriage. Treat Source Linker and attachment profiles as evidence of association, not centrality. If an index or OCR says `UNKNOWN` or conflicts with the title, image, or another record view, do not infer the subject from an attached profile; keep the source uncertain until a manual reading of the exact record resolves the conflict.
 - Preserve the record's spelling rather than normalizing it toward the tree profile. When index and image readings differ, explain which evidence supplies the proposed name; an indexed spelling is not a verified reading of the image.
 - Use related records to guide a reading while identifying each fact's source. Preserve disagreements; do not fill in names, dates, or relationships in the current record solely from another source. Mark uncertain passages in partial transcriptions and present the exact text for approval before saving.
-- Keep birth and baptism distinct. Derive every event type from the record and citation.
+- Keep birth and baptism distinct. Derive the event or document type from the record and citation; use `IDENTIDADE` for identity documents.
 - Put the primary event date in **Source Date** when evidence supports it. Do not repeat the date in the title. Preserve relevant administrative or secondary dates in citation or notes.
+- For an identity document used to support a birth date, set **Source Date** to the birth date printed on the document. This records what the document states and does not change the profile fact by itself.
 - Use `UF - MUNICIPALITY` only when both elements are supported. Never infer a missing date or place.
 - Use `FS: Registro Civil` for sources of civil origin, `FS: Registro Paroquial` for sources of parish origin regardless of whether FamilySearch presents them through an index, OCR, transcription, or image, `Acervo familiar` for material genuinely held by the family, and `Informante: {PERSON}` for personal testimony.
 - Use one space after the emoji, around every `|`, and after `:`.
