@@ -29,7 +29,7 @@ Elder Dale G. Renlund's April 2018 message, [“Family History and Temple Work: 
 
 ## Source-title convention
 
-- Canonical: `{STATUS} {EVENT} | {PRIMARY PERSON or PERSON A + PERSON B} | {UF - MUNICIPALITY} | {PROVENANCE}`
+- Canonical: `{STATUS} {EVENT or DOCUMENT TYPE} | {PRIMARY PERSON or PERSON A + PERSON B} | {UF - MUNICIPALITY} | {PROVENANCE}`
 
 `🟡` means review has started; `🟢` means review has been completed using all evidence available through authorized routes. These statuses track progress, not historical reliability or freedom from human error.
 
@@ -37,9 +37,10 @@ For a confirmed duplicate, use `⚪` and append ` | DUPLICATA`. Keep useful imag
 
 Rules:
 
-- Determine the event from the source and citation. Observed types include `NASCIMENTO`, `BATISMO`, `CASAMENTO`, `ÓBITO`, and `MEMORIA PESSOAL`.
+- Determine the event or document type from the source and citation. Observed types include `NASCIMENTO`, `BATISMO`, `CASAMENTO`, `ÓBITO`, `MEMORIA PESSOAL`, and `IDENTIDADE` for identity documents.
 - The person segment identifies the document's primary subject or subjects, independently of the profile where the source is attached. Preserve the record's spelling; state whether a proposed name comes from an index or an image when they differ. Birth and baptism are distinct; marriage uses both spouses.
 - The canonical title never repeats the date. Verify and, with approval and supporting evidence, update **Source Date** to the primary event date. Preserve relevant secondary or administrative dates in the citation or notes.
+- For an identity document used to support a birth date, use `IDENTIDADE` as the title type and set **Source Date** to the birth date printed on the document. This records what the document states and does not change the profile fact by itself.
 - Use `UF - MUNICIPALITY` only when both parts are supported; never invent missing dates or places.
 - Provenance follows the source's origin: use `FS: Registro Civil` for sources of civil origin and `FS: Registro Paroquial` for sources of parish origin, whether FamilySearch presents them through an index, OCR, transcription, or image; use `Acervo familiar` for material genuinely held by the family and `Informante: {PERSON}` for personal testimony. Do not copy a label from another title.
 - Canonical spacing is one space after the emoji, around each `|`, and after `:`.
