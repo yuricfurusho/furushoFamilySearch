@@ -46,6 +46,8 @@ For an existing-title cleanup, agree on a finite source set and keep newly arriv
 
 Choose the review depth explicitly: **metadata-only** (titles, dates, citations, and readable indexed fields) or **evidence-complete** (including authorized images and extraction). When the user requests a quick, shallow closeout, use metadata-only mode: do not browse film pages, transcribe handwriting, expand relatives, or start new research. Defer anything that needs deeper evidence and identify it in the chat report, never in public repository files. A formatting pass does not complete genealogical processing or authorize a green status.
 
+When the user chooses a staged review, pass 1 may standardize and extract information for the current source while its status stays `🟡`. Keep cross-profile linking and related-person extraction for pass 2 when those tasks are deferred. Before considering `🟢`, pass 2 must process the authorized evidence, link the source to every applicable profile and relevant fact or relationship in scope, and resolve applicable attachment work. Report deferred tasks in chat only; never record case-specific tasks here.
+
 ### 2. Build a temporary navigation buffer
 
 Keep only for the active task:
